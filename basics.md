@@ -48,4 +48,39 @@ console.log(`In mathematics ${pi} is special.`)
 ```
 - [ ]TO DO **var vs let vs const**
 
+### Relational Operators
+`===, ==, !==, !=, <=, >= <,>`
+
+- ** `===` vs `==` **
+
+Using the == operator (Equality). Compares only the  value
+
+```
+true == 1; //true, because 'true' is converted to 1 and then compared
+"2" == 2;  //true, because "2" is converted to 2 and then compared
+```
+Using the === operator (Identity). Compares both value and type
+```
+true === 1; //false
+"2" === 2;  //false
+
+```
+
+This is because the equality operator == does type coercion, meaning that the interpreter implicitly tries to convert the values before comparing.
+
+On the other hand, the identity operator === does not do type coercion, and thus does not convert the values when comparing, and is therefore faster (as according to This JS benchmark test) as it skips one step. 
+
+### Logical Operators
+1. && (And)
+2. || (Or)
+3. ! (Not)
+
+### Conditional statements
+1. if
+2. if ... else
+3. if ... else if ... else
+4. ternary
+5. switch ... case
+
+
 
