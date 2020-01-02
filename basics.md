@@ -17,6 +17,7 @@ console.log("Daya" - "Nand") // NaN
 false : `false, "", 0, -0, null, NaN`
 true : everything except `false`
 4. undefined (`undefined`)
+`var marks; //marks is declared but not assigned, and that's why undefined`
 5. null (`null`)
 
 null is an assigned value. It means nothing.
@@ -26,4 +27,18 @@ null !== undefined but null == undefined.
 
 6. symbol (new in ES6)
 7. object
+
+### Javascript Variables
+1. var
+2. let (new in ES6)
+3. const (new in ES6)
+*NOTE: Variable names start with letters or $ or _*
+*STANDARD: Follow camelCase naming standard*
+```
+var firstName = 'daya'
+let $num = 10
+const _student = 'Raju'
+```
+- [ ]TO DO **var vs let vs const**
+
 
