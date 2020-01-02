@@ -38,6 +38,13 @@ null !== undefined but null == undefined.
 var firstName = 'daya'
 let $num = 10
 const _student = 'Raju'
+
+var name = "Dayanand"
+let numOfStudents = 80
+const pi = 3.14
+console.log("My name is", name)
+console.log("I trained together with "+numOfStudents+ "students")
+console.log(`In mathematics ${pi} is special.`)
 ```
 - [ ]TO DO **var vs let vs const**
 

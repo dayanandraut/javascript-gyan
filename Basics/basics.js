@@ -22,3 +22,10 @@ null !== undefined but null == undefined.
 // 6. symbol (new in ES6)
 // 7. object
 
+// JavaScript Variables
+var name = "Dayanand"
+let numOfStudents = 80
+const pi = 3.14
+console.log("My name is", name)
+console.log("I trained together with "+numOfStudents+ "students")
+console.log(`In mathematics ${pi} is special.`)
