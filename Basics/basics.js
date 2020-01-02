@@ -29,3 +29,13 @@ const pi = 3.14
 console.log("My name is", name)
 console.log("I trained together with "+numOfStudents+ "students")
 console.log(`In mathematics ${pi} is special.`)
+
+// write a sample code for login
+let userName = "daya@blackhat.com"
+let password = "black$123"
+
+if(userName==="daya@blackhat.com" && password==="black$123"){
+  console.log(`You are logged in as ${userName}`)
+}else {
+  console.log("Invalid username or password")
+}
