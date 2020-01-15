@@ -73,3 +73,15 @@ fruits.insert(1, 'mango')
 console.log(fruits)
 fruits.delete(0)
 console.log(fruits)
+
+/*
+OUTPUT
+
+MyArray { length: 0, data: {} }
+MyArray {
+  length: 3,
+  data: { '0': 'apple', '1': 'kiwi', '2': 'orange' } }
+orange
+MyArray { length: 3, data: { '0': 'apple', '1': 'mango', '2': 'kiwi' } }
+MyArray { length: 2, data: { '0': 'mango', '1': 'kiwi' } }
+*/
