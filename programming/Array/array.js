@@ -30,11 +30,19 @@ class MyArray{
     // deletes index-th item - O(n)
     delete(index){
         const item = this.data[this.length-1]
-        this.shiftLeft(index)
+        this._shiftLeft(index)
         return item
     }
 
-    shiftLeft(index){
+     // insert item at index-th position - O(n)
+     insert(index, item){
+        this._shiftRight(index)
+        this.data[index] = item
+        return this.length
+    }
+    
+
+    _shiftLeft(index){
         for(let i = index; i<this.length-1;i++){
             this.data[i] = this.data[i+1]
         }
@@ -42,7 +50,7 @@ class MyArray{
         this.length--
     }
 
-    shiftRight(index){
+    _shiftRight(index){
         for(let i = this.length; i>index;i--){
             this.data[i] = this.data[i-1]
         }
@@ -50,13 +58,7 @@ class MyArray{
         this.length++
     }
 
-    // insert item at index-th position - O(n)
-    insert(index, item){
-        this.shiftRight(index)
-        this.data[index] = item
-        return this.length
-    }
-    
+   
 }
 
 // test array and it's operations
