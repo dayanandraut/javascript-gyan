@@ -4,8 +4,8 @@
 // hash function = produces hash out of key that is mapped to address in memory
 // let's implement hash table
 
-// [TODO] This implementation stores the same keys if given twice. 
-// It should store only once and update the value if the same key is provided again
+// [DONE] This implementation stores the same keys only once. 
+// It stores same keys only once and update the value if the same key is provided again
 class MyHashTable{
     constructor(size){
         this.data = new Array(size)
@@ -20,12 +20,26 @@ class MyHashTable{
         return hash
     }
 
+    // modifying put() to handle duplicate keys
+    // in case of duplicate key, it should update the value
     put(key, val){
         let address = this._hash(key)
         if(!this.data[address]) {
-            this.data[address] = []           
-        }
+            this.data[address] = []   
+            this.data[address].push([key,val])        
+        }else{
+            // check for duplicate key in the bucket
+            // if yes, update the value
+            for(let i =0 ; i<this.data[address].length;i++){
+                if(this.data[address][i][0]===key){
+                    this.data[address][i][1]=val
+                    return
+                }
+            }
+            // if no duplicate, push new entry
         this.data[address].push([key,val])
+        }
+        
     }
 
     get(key){
