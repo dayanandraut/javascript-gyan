@@ -68,3 +68,51 @@ history.pop()
 history.pop()
 history.printStack() // [top]:
 console.log(history.pop()) // null
+
+// ---------------------------------------------------------------
+// Array implementation of Stack
+
+class ArrayStack{
+    constructor(){
+        this.top  = -1
+        this.data = []        
+    }
+
+    push(item){
+        this.top++
+        this.data[this.top] = item
+    }
+
+    pop(){
+        if(this.top===-1) return null
+        let holding = this.data[this.top]
+        delete this.data[this.top]
+        this.top--
+        return holding
+    }
+
+    peek(){
+        if(this.top===-1) return null
+        return this.data[this.top]
+    }
+
+    printStack(){
+        console.log(this.data.join("<--"), ":[TOP]")
+    }
+
+}
+
+let funs = new ArrayStack()
+funs.push("fun1")
+funs.push("fun2")
+funs.push("fun3")
+
+funs.printStack() // fun1<--fun2<--fun3 :[TOP]
+console.log(funs.pop()) // fun3
+console.log(funs.peek()) // fun2
+
+funs.printStack() // fun1<--fun2<-- :[TOP]
+funs.pop()
+funs.pop()
+funs.pop()
+funs.printStack()
