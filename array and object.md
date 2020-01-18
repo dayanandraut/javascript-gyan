@@ -1,5 +1,6 @@
 # Array & Object
-Refer [Array and Object]('./Basics/array and object.js') for code reference
+Refer [Array and Object](/Basics) for code reference
+
 ## Array
 ### creating array
 ```javascript
