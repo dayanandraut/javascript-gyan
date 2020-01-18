@@ -141,6 +141,37 @@ fruits.printList() // cherry --> strawberry --> Mango --> Jackfruit --> orange -
 fruits.remove(0)
 fruits.remove(2)
 fruits.printList() // strawberry --> Mango --> orange --> apple --> Litchee
-fruits.remove(9) // Error : Cannot delete :index greater than or equal to length of list
+//fruits.remove(9) // Error : Cannot delete :index greater than or equal to length of list
 
+// ----------------------------------------------
+// CREATE A FUNCTION TO REVERSE THE LINKED LIST
+const reverseLinkedList = (list)=>{
+    let curr = list.head
+    let futureTail = list.head
+    let leader = null
+    let follower = null
+    while(curr && curr.next){
+        follower = curr.next
+        curr.next = leader
+        leader = curr
+        curr = follower
+        follower = follower.next
+    }
+    curr.next = leader
+    list.head = curr
+    futureTail.next = null
+    list.tail = futureTail
+    return list
+}
+
+// lets test
+let colors = new LinkedList()
+colors.append("Blue")
+colors.append("Yellow")
+colors.append("White")
+colors.append("Red")
+colors.printList()
+let reverseColor = reverseLinkedList(colors)
+reverseColor.printList()
+//console.log(reverseColor)
 
