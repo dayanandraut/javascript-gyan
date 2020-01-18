@@ -175,3 +175,6 @@ let reverseColor = reverseLinkedList(colors)
 reverseColor.printList() // Red --> White --> Yellow --> Blue
 //console.log(reverseColor)
 
+let name = new LinkedList()
+name.append("Daya")
+console.log(reverseLinkedList(name))
