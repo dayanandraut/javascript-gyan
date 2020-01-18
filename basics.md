@@ -1,13 +1,15 @@
 # Javascript Basics
 
 ### Hello World Program
-```console.log("Hello World")```
+```javascript
+console.log("Hello World")
+```
 
 ### Types in Javascript
 There are *7 types* (of values) in Javascript
 1. number (`1,5,97, NaN`)
 2. string (`'Daya', "Raut", My name is ${name}`)
-```
+```javascript
 console.log("Daya "+"Nand") // Daya Nand
 console.log(10+"5") // 105
 console.log(10-"5") // 5
@@ -34,7 +36,7 @@ null !== undefined but null == undefined.
 3. const (new in ES6)
 *NOTE: Variable names start with letters or $ or _*
 *STANDARD: Follow camelCase naming standard*
-```
+```javascript
 var firstName = 'daya'
 let $num = 10
 const _student = 'Raju'
@@ -55,12 +57,12 @@ console.log(`In mathematics ${pi} is special.`)
 
 Using the == operator (Equality). Compares only the  value
 
-```
+```javascript
 true == 1; //true, because 'true' is converted to 1 and then compared
 "2" == 2;  //true, because "2" is converted to 2 and then compared
 ```
 Using the === operator (Identity). Compares both value and type
-```
+```javascript
 true === 1; //false
 "2" === 2;  //false
 
@@ -84,7 +86,7 @@ On the other hand, the identity operator === does not do type coercion, and thus
 
 
 ** write a sample code for login **
-```
+```javascript
 let userName = "daya@blackhat.com"
 let password = "black$123"
 
