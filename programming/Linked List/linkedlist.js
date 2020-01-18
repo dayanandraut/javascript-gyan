@@ -170,8 +170,8 @@ colors.append("Blue")
 colors.append("Yellow")
 colors.append("White")
 colors.append("Red")
-colors.printList()
+colors.printList() // Blue --> Yellow --> White --> Red
 let reverseColor = reverseLinkedList(colors)
-reverseColor.printList()
+reverseColor.printList() // Red --> White --> Yellow --> Blue
 //console.log(reverseColor)
 
