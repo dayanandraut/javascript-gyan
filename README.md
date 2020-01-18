@@ -1,5 +1,5 @@
 # javascript-gyan
-It is created while learning/brushing up javascript. 
+It is created while learning/brushing up javascript. Go to [basics](basics.md)
 
 # programming
-It also includes programming problems solved using data structures and algorithms
+[Programming](/programming) includes implementation of common data structures and algorithms and  programming problems solved using data structures and algorithms
