@@ -54,6 +54,22 @@ class Tree{
         
     }
 
+    // delete : O(n)
+    delete(value){
+        let curr = this.root
+        let parent = this.root
+        while(curr){
+            if(value===curr.value){
+
+            }else if(value<curr.value){
+                curr = curr.left
+            }else{
+                curr = curr.right
+            }
+        }
+        return undefined
+    }
+
     // looks for value : O(logn)
     lookup(value){
         // if the tree is empty
