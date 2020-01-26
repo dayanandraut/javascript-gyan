@@ -35,3 +35,6 @@
 1. [FACTORIAL](factorial.js)
 2. [FIBONACCI](fibonacci.js)
 3. [REVERSE STRING](reverseString.js)
+
+## TAIL CALL OPTIMIZATION
+> It allows recursion to run without increasing call stack . ES6 has this feature. Many other programming languages have this feature too
