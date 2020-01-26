@@ -26,10 +26,10 @@
 2. Time complexity is **O**(*branch* ^ *depth*) , which is **exponential**
 
 ## When to use Recursion
-> When using tree, or converting something into tree
-> When depth is **unknown**
-> For *BFS* or *DFS*
-> Divide and Conquer Approach
+1. When using tree, or converting something into tree
+2. When depth is **unknown**
+3. For *BFS* or *DFS*
+4. Divide and Conquer Approach
 
 #### PROBLEMS SOLVED
 1. [FACTORIAL](factorial.js)
